@@ -1,0 +1,61 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Cómo incluir CSS en un HTML</h1>
+    <p>En el mismo documento</p>
+    <pre>
+        style type="text/css">
+            ...
+        /style>
+    </pre>
+    <p>En un archivo externo, dentro del header:</p>
+    <pre>
+        link rel="stylesheet" type="text/css" href="/css/estilos.css" media="screen" />
+    </pre>
+    <p>Dentro de un elemento HTML:</p>
+    <pre>
+        p style="color: black; font-family: Verdana;">Un párrafo de texto.</p>
+    </pre>
+    <h1>Selectores de Clase</h1>
+    <p>La idea es definir un estilo con un nombre, empezando con “.”:</p>
+    <pre>
+        .titcol{
+            font-size : 10pt;
+            font-family : verdana,arial,helvetica;
+            font-weight : bold;
+            background-color : #F3F1D1;
+            background-image : url(images/fontit2.gif);
+            color : #333333;
+            border-bottom: 1px solid #cccccc;
+        }
+    </pre>
+    <p>Y luego:</p>
+    <pre>
+        td class="titcol">Comentarios sin revisar</b></td>
+    </pre>
+    <h1>Selectores de ID</h1>
+    <p>
+        Es una manera de aplicar estilos a <br>
+        elementos únicos sin “tocar” el html.
+    </p>
+    <pre>
+        #titcol{
+            font-size : 10pt;
+            font-family : verdana,arial,helvetica;
+            font-weight : bold;
+            background-color : #F3F1D1;
+            background-image : url(images/fontit2.gif);
+            color : #333333;
+            border-bottom: 1px solid #cccccc;
+        }
+    </pre>
+    <p>Y luego:</p>
+    <pre>
+        td id="titcol">Comentarios sin revisar</b></td>
+    </pre>
+</body>
+</html>

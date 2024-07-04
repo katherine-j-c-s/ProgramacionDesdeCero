@@ -1,0 +1,17 @@
+a:link{
+    font-weight: bold;
+    color: rgb(8, 117, 0);
+}
+a:visited{
+    font-weight: bold;
+    color: red;
+}
+a:active{
+    font-weight: bold;
+    color: blue;
+    font-size: 20em;
+}
+a:hover{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: red;
+}

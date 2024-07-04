@@ -1,0 +1,82 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Selectores: los vínculos</h1>
+    <p>Existen selectores específicos para aplicar estilos a los vínculos.</p>
+    <ul>
+        <li><strong>A:link </strong> es el selector para vínculos normales no visitados</li>
+        <li><strong>A:visited </strong>  es el selector para vínculos visitados</li>
+        <li>
+            <strong>A:active </strong>  es el selector para vínculos activos (cuando <br>
+            los clickeados). Depende del navegador.
+        </li>
+        <li>
+            <strong>A:hover </strong>  es el selector para links cuando el mouse <br>
+            está encima del vínculo. No funciona para <br>
+            navegadores antiguos.
+        </li>
+    </ul>
+    <h1>Unidades de medida</h1>
+    <p>Unidades relativas:</p>
+    <ul>
+        <li>
+            <strong>em</strong> , relativa respecto del tamaño de letra empleado. Aunque no <br>
+            es una definición exacta, el valor de 1 em se puede aproximar <br> 
+            por la anchura de la letra M ("eme mayúscula") del tipo de letra <br>
+            que se esté utilizando
+        </li>
+        <li>
+            <strong>ex</strong> , relativa respecto de la altura de la letra x ("equis <br>
+            minúscula") del tipo de letra que se esté utilizando            
+        </li>
+        <li>
+            <strong>ch</strong> , relativa al ancho del 0 (cero)
+        </li>
+        <li>
+            <strong>Porcentajes</strong> , relativa al elemento padre
+        </li>
+        <li>
+            Otros :<strong>rem</strong>, <strong>vw</strong>, <strong>vh</strong>, <strong>vmin</strong>, <strong>vmax</strong>
+        </li>
+    </ul>
+    <p>ejemplo</p>
+    <pre>
+        body { font-size: 0.9em; } 
+    </pre>
+    <h1>Unidades de medida</h1>
+    <p>Unidades Absolutas:</p>
+    <ul>
+        <li>
+            <strong>in</strong> , del inglés "inches", pulgadas (1 pulgada son 2.54 centímetros)
+        </li>
+        <li>
+            <strong>cm</strong> , centímetros    
+        </li>
+        <li>
+            <strong>mm</strong> , milímetros    
+        </li>
+        <li>
+            <strong>pt</strong> , puntos (1 punto equivale a 1 pulgada/72, es decir, unos 0.35 milímetros)
+        </li>
+        <li>
+            <strong>pc</strong> ,  picas (1 pica equivale a 12 puntos, es decir, unos 4.23 milímetros) 
+        </li>
+        <li>
+            <strong>px</strong> ,  (pixel).Si bien se lo considera relativo al ancho de la pantalla, en <br>
+            disponitivos modernos suele ser 1/96 de un in
+        </li>
+    </ul>
+    <p>ejemplos</p>
+    <pre>
+        body { margin: 0.5in; }
+        h1 { line-height: 2cm; }
+        p { word-spacing: 4mm; }
+        a { font-size: 12pt }
+        span { font-size: 1pc }
+    </pre>
+</body>
+</html>

@@ -1,0 +1,13 @@
+body{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    width: 80%;
+    margin: auto;
+}
+.parrafoPar{
+    width: 80%;
+    margin-left: 20%;
+}
+.parrafoImpar{
+    width: 80%;
+    margin-right: 20%;
+}

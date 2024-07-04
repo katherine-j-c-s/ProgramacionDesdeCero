@@ -1,0 +1,103 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Estilos. posicionamiento:</h1>
+    <p>position:</p>
+    <ul>
+        <li>
+            <strong>static</strong> es el posicionamiento que se utiliza por defecto y todos <br>
+            los elementos inicialmente se muestran de esta forma. No se <br>
+            tienen en cuenta los valores de las propiedades top, right, <br>
+            bottom y left.
+        </li>
+        <li>
+            <strong>relative</strong> la nueva posición del elemento se calcula a partir de <br>
+            la posición que tendría si no se utilizara la propiedad position. <br>
+            Las posiciones de los elementos contiguos no se ven <br>
+            afectadas por el desplazamiento de este elemento.  <br>
+        </li>
+        <li>
+            <strong>absolute</strong> la nueva posición del elemento se determina <br>
+            mediante las propiedades top, right, bottom y left. Los valores <br>
+            de esas propiedades indican la posición del elemento respecto <br>
+            de la posición de su elemento padre. La posición del siguiente <br>
+            elemento se calcula como si no existiera el elemento que se <br>
+            desplaza, ya que este último se desentiende por completo del <br>
+            posicionamiento normal. 
+        </li>
+        <li>
+            <strong>fixed</strong> la nueva posición del elemento se calcula de forma  <br>
+            idéntica al posicionamiento absoluto. La diferencia reside en <br>
+            que en el caso de fixed, el elemento no se mueve cuando se <br>
+            desplaza la ventana del navegador. En los medios visuales <br>
+            (como la pantalla) el elemento se muestra en una posición fija <br>
+            independiente del movimiento de la ventana del navegador. En <br>
+            los medios impresos, el elemento se muestra en todas las <br>
+            páginas. 
+        </li>
+        <li>
+            <strong>sticky</strong> Es tratado como un elemento posicionado <br>
+            relativamente hasta que su bloque contenedor cruza un límite <br>
+            establecido, a partir del cual es tratado como fixed. <br>
+        </li>
+    </ul>
+    <h3>Float</h3>
+    <p>
+        permite controlar la forma en la que los <br>
+        contenidos fluyen alrededor de los contenidos <br>
+        posicionados mediante float. <br>
+    </p>
+    <p>
+        Uno de los principales motivos para la creación del <br>
+        posicionamiento float fue la posibilidad de colocar <br>
+        imágenes alrededor de las cuales fluye el texto.
+    </p>
+    <p>ejemplo</p>
+    <pre>
+        float: left;
+    </pre>
+    <h3>clear</h3>
+    <p>
+        La propiedad clear indica el lado del elemento HTML que no debe <br>
+        ser adyacente a otros elementos desplazados mediante float. <br>
+    </p>
+    <p>
+        Si se indica el valor left, el elemento se desplaza de forma <br>
+        descendente hasta que pueda colocarse en una línea en la que no <br>
+        haya ningún elemento en el lado izquierdo. 
+    </p>
+    <p>
+        “Un desplazamiento descendente hasta que el borde superior del <br>
+        elemento esté por debajo del borde inferior de cualquier elemento <br>
+        desplazado hacia la izquierda". 
+    </p>
+    <p>ejemplo</p>
+    <pre>
+        clear: left;
+    </pre>
+    <h1>visualizacion</h1>
+    <p>Permiten ocultar y/o mostrar elementos</p>
+    <p>
+        CSS define cuatro propiedades que <br>
+        definen la visualización de los <br>
+        elementos:
+    </p>
+    <ul>
+        <li><strong>visibility</strong> Es posible hacer invisible a un elemento.</li>
+        <li>
+            <p><strong>Display</strong>Los más utilizados son inline, block, none y flex. </p>
+            <ul>
+                <li><strong>inline</strong> permite mostrar cualquier elemento como si fuera de linea.</li>
+                <li><strong>block</strong>  permite mostrar cualquier elemento como si fuera de bloque.</li>
+                <li><strong>none</strong> hace como si el elemento no existiera</li>
+                <li><strong>flex</strong> crear un contenedor flexible que facilita el diseño de páginas web responsives y dinámicas. </li>
+            </ul>
+        </li>
+        <li><strong>z-index</strong> Valor tridimensional que indica que bloque está “detrás” de cual.</li>
+    </ul>
+</body>
+</html>
