@@ -1,0 +1,260 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>pasos para crear una tabla</h1>
+    <ol>
+        <li>
+            Para crear las tablas será necesario <br>
+            usar una nueva etiqueta: TABLE.
+        </li>
+        <br>
+        <li>Etiqueta de inicio, TABLE></li>
+        <br>
+        <li>Etiqueta de fin, /TABLE> .</li>
+        <br>
+        <li>
+            Entre ambas debemos introducir otras <br>
+            tres etiquetas, que definirán la <br>
+            estructura de la tabla. (tr,th,td) 
+        </li>
+    </ol>
+    <h1>Cómo se crea una tabla</h1>
+    <p>la etiqueta <strong>TR (Table Row)</strong>nos permitirá insertar filas en la tabla</p>
+    <p>la etiqueta <strong>TH (Table Header)</strong>nos permitirá insertar las celdas del encabezado de la tabla. <br> se cologan en la primera fila de la tabla</p>
+    <p>la etiqueta <strong>TD (Table Data)</strong>Su función será introducir todos los datos que queramos en las celdas definidas</p>
+    <p>asi lo podriamos crear en el codigo</p>
+    <pre>
+        table>
+            tr>
+                th> Encabezado1 /th>
+                th> Encabezado2 /th>
+            /tr>
+            tr>
+                td> Columna1 de la fila 1 /td>
+                td> Columna2 de la fila 1 /td>
+            /tr>
+            tr>
+                td> Columna1 de la fila 2 /td>
+                td> Columna2 de la fila 2 /td>
+            /tr>
+        /table>
+    </pre>
+    <p>Este seria el resultado</p>
+    <table>
+        <tr>
+            <th>Encabezado1</th>
+            <th>Encabezado2</th>
+        </tr>
+        <tr>
+            <td> Columna1 de la fila 1 </td>
+            <td> Columna2 de la fila 1</td>
+        </tr>
+        <tr>
+            <td> Columna1 de la fila 2 </td>
+            <td> Columna2 de la fila 2</td>
+        </tr>
+    </table>
+    <h3>Bordes Tablas HTML</h3>
+    <p>Borde de las tablas: añadir borde a las tablas</p>
+    <p>table border="2"></p>
+    <table border="2">
+        <tr>
+            <th>Encabezado1</th>
+            <th>Encabezado2</th>
+        </tr>
+        <tr>
+            <td> Columna1 de la fila 1 </td>
+            <td> Columna2 de la fila 1</td>
+        </tr>
+        <tr>
+            <td> Columna1 de la fila 2 </td>
+            <td> Columna2 de la fila 2</td>
+        </tr>
+    </table>
+
+    <h3>Titulo Tablas HTML</h3>
+    <p>Insertar un título para la tabla</p>
+    <p>Texto que acompaña a la tabla, puede estar <br>
+        situado encima o debajo de ella</p>
+    <p>caption> Titulo de la tabla /caption ></p>
+    <table border="2">
+        <caption> Titulo de la tabla </caption>
+        <tr>
+            <th>Encabezado1</th>
+            <th>Encabezado2</th>
+        </tr>
+        <tr>
+            <td> Columna1 de la fila 1 </td>
+            <td> Columna2 de la fila 1</td>
+        </tr>
+        <tr>
+            <td> Columna1 de la fila 2 </td>
+            <td> Columna2 de la fila 2</td>
+        </tr>
+    </table>
+    <p>La etiqueta CAPTION permite el uso de un <br>
+        atributo ALIGN , que nos permitirá elegir <br>
+        que dichos títulos sean mostrados como pie <br>
+        de la tabla. <br>
+        El atributo ALIGN, puede tomar dos valores  <br>
+        top y bottom.
+    </p>
+    <table border="2">
+        <caption align="bottom"> Pie de la tabla</caption>
+        <tr>
+            <th>Encabezado1</th>
+            <th>Encabezado2</th>
+        </tr>
+        <tr>
+            <td> Columna1 de la fila 1 </td>
+            <td> Columna2 de la fila 1</td>
+        </tr>
+        <tr>
+            <td> Columna1 de la fila 2 </td>
+            <td> Columna2 de la fila 2</td>
+        </tr>
+    </table>
+    <h3>Alineamiento Tablas HTML</h3>
+    <p>Alineamiento vertical: se utiliza un <br>
+        nuevo atributo: VALIGN (alineamiento <br>
+        vertical).
+    </p>
+    <p>Alineamiento horizontal: se utiliza el atributo <br>
+        ALIGN de las etiquetas th o td en función <br>
+        del tipo de celda. Este atributo permitirá <br>
+        seleccionar entre un alineamiento a la <br>
+        izquierda (align="left"), centrado (align <br>
+        ="center") o a la derecha (align="right")
+    </p>
+    <pre>
+        tr align="right" valign="bottom">
+        ... Etiquetas para crear las celdas ..
+        ./tr>
+    </pre>
+    <p>Todas las celdas de esa fila tendrán se alinearán por defecto a la derecha y abajo</p>
+    <h3>Agrupar Celdas</h3>
+    <p>Celdas que abarcan varias filas o columnas <br>
+        Dos nuevos atributos ROWSPAN y COLSPAN.  <br>
+        Estos dos atributos los podemos usar: celdas td y las celdas encabezado TH</p>
+    <p>su funcion</p>
+    <ul>
+        <li>
+            <strong>ROWSPAN</strong>: extender una fila para que ocupen el tamaño
+            de varias.
+        </li>
+        <li>
+            <strong>COLSPAN</strong>: extender una columna para que ocupen el
+            tamaño de varias.
+        </li>
+    </ul>
+    <p>ejemplo</p>
+    <pre>
+        table BORDER="1">
+            tr>
+                th colspan="2"> Celda de dos columnas /th >
+            /tr>
+            tr>
+                td rowspan="2"> Celda de dos filas /td>
+                td> Fila2,Columna2 /td>
+            /tr>
+            tr>
+                td> Fila3,Columna2 /td>
+            /tr>
+        /table>
+    </pre>
+    <p>resultado</p>
+    <table BORDER="1">
+        <tr>
+            <th colspan="2"> Celda de dos columnas </th >
+        </tr>
+        <tr>
+            <td rowspan="2"> Celda de dos filas </td>
+            <td> Fila2,Columna2 </td>
+        </tr>
+        <tr>
+            <td> Fila3,Columna2 </td>
+        </tr>
+    </table>
+    <h3>Márgenes y separación de celdas</h3>
+    <p>
+        Para cambiar la distancia que existe entre los bordes de las celdas <br>
+        utilizaremos el atributo <strong>CELLSPACING</strong> (Espaciado de celdas).
+        <br><br>
+        El margen que existe entre los elementos de las celdas y sus bordes <br>
+        (inicialmente es nula) lo vamos a controlar utilizando el atributo <br>
+        <strong>CELLPADDING</strong>.
+    </p>
+    <p>ejemplo</p>
+    <pre>
+        table cellpadding="10" cellspacing="10" border=“1”>
+            ... Código de la tabla ...
+        /table >
+    </pre>
+    <p>resultado</p>
+    <table cellpadding="10" cellspacing="10" border="1">
+        <tr>
+            <td>fila 1 col 1</td>
+            <td>fila 1 col 2</td>
+        </tr>
+        <tr>
+            <td>fila 2 col 1</td>
+            <td>fila 2 col 2</td>
+        </tr>
+    </table>
+    <h3>andamiento</h3>
+    <p>ejemplo</p>
+    <pre>
+        table border="1">
+            tr>
+                td>
+                    !-- TABLA ANIDADA DENtrO DE OtrA--
+                    table cellpadding="10" border="1">
+                        tr>
+                            td>a href="https://www.youtube.com/">ir ejemplo: Alineacion Vertical /a>/td>
+                        /tr>
+                        tr>
+                            td>a href="https://www.youtube.com/">ir ejemplo: Alineacion Horizontal /a>/td>
+                        /tr>
+                        tr>
+                            td>a href="https://www.youtube.com/">ir ejemplo: atributo Nowrap /a>/td>
+                        /tr>
+                        tr>
+                            td>a href="https://www.youtube.com/">ir ejemplo: Tabla con encabezado /a>/td>
+                        /tr>
+                    /table>
+                    !-- FIN TABLA ANIDADA --
+                /td>
+                td>img width="200px" src="https://i.redd.it/8mbkxz66mxj21.png">/td>
+            /tr>
+        /table>
+    </pre>
+    <p>resultado</p>
+    <table border="1">
+        <tr>
+            <td>
+                <!-- TABLA ANIDADA DENtrO DE OtrA-->
+                <table cellpadding="10" border="1">
+                    <tr>
+                        <td><a href="https://www.youtube.com/">ir ejemplo: Alineacion Vertical </a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="https://www.youtube.com/">ir ejemplo: Alineacion Horizontal </a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="https://www.youtube.com/">ir ejemplo: atributo Nowrap </a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="https://www.youtube.com/">ir ejemplo: Tabla con encabezado </a></td>
+                    </tr>
+                </table>
+                <!-- FIN TABLA ANIDADA -->
+            </td>
+            <td><img width="200px" src="https://i.redd.it/8mbkxz66mxj21.png"></td>
+        </tr>
+    </table>
+</body>
+</html>

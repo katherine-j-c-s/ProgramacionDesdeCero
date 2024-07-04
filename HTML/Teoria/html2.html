@@ -1,0 +1,95 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <a name="Inicio">Inicio</a>
+    <h2>Texto preformateado</h2>
+    <p>
+        Mantener los espacios o saltos de <br>
+        línea de un párrafo tal y como están <br>
+        en el código HTML. Para conseguir <br>
+        esto hay que alterar el <br>
+        comportamiento habitual del <br>
+        navegador que ignora este formato. <br> <br>
+        Se usa la etiqueta /pre>
+    </p>
+    <pre>
+        | |
+        | Programación estática |
+        | y Laboratorio Web |
+        | |
+        Oooo.
+        .oooO ( )
+        ( ) ) /
+        \ ( (_/
+        \_)
+    </pre> 
+    <h2>Listas en HTM</h2>
+    <p>Se definen los siguientes tipos de listas:</p>
+    <ul>
+        <li>
+            <h3>Numerada u ordenada</h3>
+            <p>La lista queda delimitado por la etiqueta /OL> y Cada elemento con la etiqueta /li></p>
+            <ol>
+                <li>elemento 1</li>
+                <li>elemento 2</li>
+                <li>elemento 3</li>
+            </ol>
+        </li>
+        <li>
+            <h3>No ordenada</h3>
+            <p>La lista queda delimitado por la etiqueta /UL> y Cada elemento con la etiqueta /li></p>
+            <ul>
+                <li>elemento 1</li>
+                <li>elemento 2</li>
+                <li>elemento 3</li>
+            </ul>
+        </li>
+        <li>
+            <h3>Listas de glosario o de definición</h3>
+            <p>La lista queda delimitado por la etiqueta /DL> y Cada elemento con la etiqueta /li></p>
+            <p>La inserción de elemento está compuesta de dos partes:</p>
+            <dl>
+                <li>La palabra que queremos definir: usaremos la etiqueta /DT></li>
+                <li>La definición o descripción de esa palabra: usamos la etiqueta: /DD></li>
+            </dl>
+            <p>ejemplo</p>
+            <dt>Hipertexto</dt>
+            <dd>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex cupiditate natus amet voluptatem ipsum. Excepturi, corporis explicabo recusandae deleniti iste, ipsum sed voluptas est repellendus sit culpa, incidunt facilis voluptate!</dd>
+        </li>
+        <li>Menús</li>
+        <li>Listas que se pueden anidar</li>
+        <li>Usadas con párrafos cortos</li>
+        <li>Listas de directorio</li>
+    </ul>
+    <h2> comentarios </h2>
+    <!-- esto es un comentario  -->
+    <p>"!-- Esto es un comentario --"  poniendo < al inicio y > al final</al></p>
+    <h2>Enlaces hipertexto</h2>
+    <p>Para crear enlaces se usa la etiqueta /a></p>
+    <a href="https://www.youtube.com/">Ejemplo</a>
+    <p>tambien puede rediriguir a otra parte de la pagina que estamos, como un ancla</p>
+    <ol>
+        <li>
+            <h3>Creando anclas:</h3>
+            <p>a name="nombreAncla">Comienzo /a</p>
+        </li>
+        <li>
+            <p>Este texto no tiene ningún significado <br>
+                especial y será interpretado por los <br>
+                navegadores de igual forma que el texto <br>
+                de alrededor
+            </p>
+        </li>
+        <li>
+            <h3>Luego se crea un enlace hacia el ancla</h3>
+            <p>a href="#nombreAncla ">Aquí /a </p>
+        </li>
+        <li>El secreto está en el “#”</li>
+    </ol>
+    <a href="#Inicio ">ir a Inicio</a>
+</body>
+</html>

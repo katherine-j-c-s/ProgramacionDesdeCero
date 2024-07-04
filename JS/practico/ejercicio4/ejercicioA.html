@@ -1,0 +1,39 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- a- Hacer una página web con código javascript que le pida al usuario sus datos 
+    personales y luego los imprima en el formato del Ejercicio 1. Al finalizar debe 
+    mostrar un cuadro de dialogo con el mensaje “Sus datos han sido impresos”.  -->
+    <h1>Agrege sus datos personales:</h1>
+
+    <form id="encuesta">
+
+        <label for="nombre"><strong>Nombre:</strong></label>
+        <input type="text" id="nombre" required><br/>
+
+        <label for="apellido"><strong>Apellido:</strong></label>
+        <input type="text" id="apellido" required><br/>
+
+        <label for="estadoCivil"><strong>Estado Civil:</strong></label>
+        <input type="text" id="estadoCivil" required><br/>
+
+        <label for="edad"><strong>Edad:</strong></label>
+        <input type="text" id="edad" required><br/>
+        
+        <label for="fechaNacimiento"><strong>Fecha Nacimiento:</strong></label>
+        <input type="text" id="fechaNacimiento" required><br/>
+
+        <label for="dni"><strong>dni:</strong></label>
+        <input type="text" id="dni" required><br/>
+
+        <button type="button" onclick="generarDatos()">Generar mis Datos</button>
+        
+    </form>
+
+    <script src="scriptA.js"></script>
+</body>
+</html>

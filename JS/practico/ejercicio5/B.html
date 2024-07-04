@@ -1,0 +1,29 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- b- Desarrollar una página que tenga la funcionalidad de una calculadora que utilice 
+    la librería del ejercicio anterior. Debe contener un botón por cada operación. Al 
+    hacer clic sobre cada botón debe pedirle al usuario los parámetros de la función, 
+    llamar a la función y luego imprimir el resultado en un textarea como se muestra 
+    en la figura -->
+    <h1>vamos a hacer calculos</h1>
+    <button class="btnCalculo" onclick="calculo('suma')">suma</button>
+    <button class="btnCalculo" onclick="calculo('resta')">resta</button>
+    <button class="btnCalculo" onclick="calculo('division')">division</button>
+    <button class="btnCalculo" onclick="calculo('multiplicacion')">multiplicacion</button>
+    <button class="btnCalculo" onclick="calculo('potencia')">potencia</button>
+    <button class="btnCalculo" onclick="calculo('cuadrado')">cuadrado</button>
+    <div id="calculo">
+        <h2 id="title"></h2><br>
+        <form id="ingreseDatos">
+        </form>
+    </div>
+    <div id="resultado"></div>
+    <script src="scriptA.js"></script>
+    <script src="scriptB.js"></script>
+</body>
+</html>

@@ -1,0 +1,211 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Formularios HTML</h1>
+    <p>
+        Para crear un formulario el lenguaje HTML proporciona la <br>
+        etiqueta <strong>FORM</strong> .
+    </p>
+    <p>
+        Para diferenciar los distintos elementos que <br>
+        podemos obtener a partir de la etiqueta <strong>INPUT</strong> <br>
+        utilizaremos el atributo <strong>TYPE</strong> que puede tomar <br>
+        los siguientes valores:
+    </p>
+    <ul>
+        <li>
+            <p>Input Type: text</p>
+            <input placeholder="text" type="text">
+        </li>
+        <li>
+            <p>Input Type: password</p>
+            <input placeholder="password" type="password">
+        </li>
+        <li>
+            <p>Input Type: radio</p>
+            <input placeholder="radio" type="radio">
+        </li>
+        <li>
+            <p>Input Type: checkbox</p>
+            <input placeholder="checkbox" type="checkbox">
+        </li>
+        <li>
+            <p>Input Type: submit</p>
+            <input placeholder="submit" type="submit">
+        </li>
+        <li>
+            <p>Input Type: image</p>
+            <input placeholder="image" type="image" width="50" src="https://i.redd.it/8mbkxz66mxj21.png">
+        </li>
+        <li>
+            <p>Input Type: reset</p>
+            <input placeholder="reset" type="reset">
+        </li>
+        <li>
+            <p>Input Type: file</p>
+            <input placeholder="file" type="file">
+        </li>
+        <li>
+            <p>Input Type: hidden</p>
+            <input placeholder="hidden" type="hidden">
+        </li>
+        <li>
+            <p>Input Type: color</p>
+            <input placeholder="color" type="color">
+        </li>
+        <li>
+            <p>Input Type: date</p>
+            <input placeholder="date" type="date">
+        </li>
+        <li>
+            <p>Input Type: datetime</p>
+            <input placeholder="datetime" type="datetime">
+        </li>
+        <li>
+            <p>Input Type: email</p>
+            <input placeholder="email" type="email">
+        </li>
+        <li>
+            <p>Input Type: month</p>
+            <input placeholder="month" type="month" width="50" src="https://i.redd.it/8mbkxz66mxj21.png">
+        </li>
+        <li>
+            <p>Input Type: number</p>
+            <input placeholder="number min=1 max=5" type="number" min="1" max="5">
+        </li>
+        <li>
+            <p>Input Type: range</p>
+            <input placeholder="range min=1 max=10" type="range"  min="1" max="10">
+        </li>
+        <li>
+            <p>Input Type: search</p>
+            <input placeholder="search" type="search">
+        </li>
+        <li>
+            <p>Input Type: time</p>
+            <input placeholder="time" type="time">
+        </li>
+        <li>
+            <p>Input Type: url</p>
+            <input placeholder="url" type="url">
+        </li>
+        <li>
+            <p>Input Type: week</p>
+            <input placeholder="week" type="week">
+        </li>
+    </ul>
+    <p>
+        <strong>MAXLENGTH</strong>: Con este atributo limitamos el <br>
+        número máximo de caracteres que pueden ser <br>
+        escritos
+    </p>
+    <p>
+        <strong>VALUE</strong>: Sirve para especificar un <br>
+        texto que debe aparecer por defecto <br>
+        en el campo de texto, antes de que el <br>
+        usuario escriba.        
+    </p>
+    <p>
+        <strong>PLACEHOLDER</strong>: Texto sombreado <br>
+        que aparece como sugerencia del <br>
+        valor a escribir.
+    </p>
+    <p>
+        <strong>SIZE</strong>: Determina la anchura del campo de <br>
+        texto. El valor por defecto de este atributo <br>
+        es 20 caracteres.
+    </p>
+    <p>
+        <strong>NAME</strong>: Determina el nombre de la informacion <br>
+        que tendra el imput por defecto, si van a agregar un nombre <br>
+        entonces name = nombre
+    </p>
+    <p>ejemplo</p>
+    <pre>
+        input type="password“ name="clave" size="tamaño"
+        maxlength="longitud_máxima" value="clave por defecto"
+        align="alineamiento">
+    </pre>
+    <p>resultado</p>
+    <input type="password" name="clave" size="20px"
+    maxlength="10" value="hjsr1311"
+    align="alineamiento">
+    <h3>textarea</h3>
+    <p>Este no es un input type pero el usuario puede escribir <br>
+        igual como si usaramos input <br><br>
+        consta de tres atributos.
+    </p>
+    <p>
+        <strong>NAME</strong>: El nombre del textarea   
+    </p>
+    <p>
+        <strong>ROWS</strong>: El número de líneas del area <br>
+        de texto.
+    </p>
+    <p>
+        <strong>COLS</strong>: El número de caracteres <br>
+        visibles de cada línea. Este atributo es <br>
+        similar al atributo SIZE que vimos en <br>
+        los campo de texto.
+    </p>
+    <pre>
+        textarea name="descripcion" cols="30" rows="10"></textarea>
+    </pre>
+    <p>resultado</p>
+    <textarea name="descripcion" cols="30" rows="10"></textarea>
+    <h3>select</h3>
+    <p>Cuadros de selecció</p>`
+    <p>
+        Tampoco es un type <br>
+        Su función será dar a elegir entre una serie de opciones de <br>
+        manera que el usuario pueda elegir una o varias de ellas. <br> 
+        Existen dos formas de mostrar estas opciones, como una <br>
+        lista con desplazamiento, o mediante una lista desplegable. <br>
+    </p>
+    <p>Para insertar un cuadro de selección usaremos la etiqueta </p>
+    <p>
+        <strong>SELECT</strong> que consta de una etiqueta de inicio y de una <br>
+        etiqueta de fin, entre las cuales introduciremos las diferentes <br>
+        opciones para el usuario
+    </p>
+    <p>
+        <strong>OPTION</strong>:etiqueta para insertar estas opciones <br>
+    </p>
+    <p>
+        <strong>SELECTED</strong>: atributo que nos permitirá elegir <br>
+        la opción que debe estar seleccionada por <br>
+        defecto. 
+    </p>
+    <p>
+        <strong>SIZE</strong>: atributo que <br>
+        determina el número de opciones que <br>
+        pueden ser vistas simultáneamente.
+    </p>
+    <p>ejemplo</p>
+    <pre></pre>
+    <select name="frutas">
+        <option value="selecciona">selecciona una fruta</option>
+        <option value="fresa"> fresa </option>
+        <option value="manzana"> manzana </option>
+        <option value="pera"> pera </option>
+        <option value="piña"> piña </option>
+        <option value="limon"> limon </option>
+    </select>
+    <h3>COMO USAR LOS DATOS DE UN FORMULARIO</h3>
+    <p>
+        La etiqueta <strong>FORM</strong> consta de un atributo llamado <strong>ACTION</strong> <br>
+        donde debemos especificar la dirección <strong>URL</strong> del programa <br>
+        donde deben enviarse los datos. Además debe usarse otro <br>
+        atributo,<strong>METHOD</strong>  , para indicarle cómo se mandarán estos <br>
+        datos. Este atributo puede tomar dos valores <strong>GET</strong> y <strong>POST</strong>, <br>
+        omitiendo todos los detalles, podemos decir que el primero se <br>
+        usa con formularios pequeños, mientras que el segundo será <br>
+        el escogido para formularios donde la cantidad de información <br>
+        es grande.
+    </p>
+</body>
+</html>

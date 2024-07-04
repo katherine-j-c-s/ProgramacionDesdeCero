@@ -1,0 +1,177 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Iframes y sonido</h1>
+    <h3>IFrames</h3>
+    <p>Se utiliza para insertar un sitio o página en otro.</p>
+    <p>
+        La etiqueta <strong>IFRAME</strong> es un contenedor, esto es, está formada <br>
+        por una etiqueta de inicio,  iframe>, donde se especifican <br>
+        todas las características del frame por medio de atributos, y <br>
+        una etiqueta de fin, /iframe>.
+    </p>
+    <h2>Iframes - Atributos</h2>
+    <ul>
+        <li>
+            El atributo <strong>SRC es de uso obligatorio y toma como valor la</strong> <br>
+            dirección URL, absoluta o relativa, del documento HTML que servirá <br>
+            como contenido
+        </li>
+        <li>
+            <strong>NAME Este atributo nos permitirá asignarle un nombre al</strong> frame <br>
+            que nos va a servir para hacer referencia a él
+        </li>
+        <li>
+            <strong>•WIDTH y HEIGTH Usando estos dos atributos podremos</strong> indicar <br>
+            la anchura y altura respectivamente que queramos. El valor dado <br>
+            será interpretado como un número en pixeles.
+        </li>
+        <li>
+            <strong>FRAMEBORDER : sirve para quitar y poner los bordes.</strong>
+        </li>
+        <li>
+            <strong>SCROLLING Este atributo nos permitirá quitar o mostrar la </strong> barra <br>
+            de desplazamiento. Puede tomar tres valores:
+            <ul>
+                <li>
+                    <strong>value: Es el valor por defecto e indica que la barra de</strong><br>
+                    desplazamiento sólo será mostrada si es necesario
+                </li>
+                <li>
+                    <strong>Yes: las barras de desplazamiento deben mostrarse siempre</strong>
+                </li>
+                <li>
+                    <strong>No: indica que no se mostrarán nunca.</strong>
+                </li>
+            </ul>
+        </li>
+    </ul>
+    <h2>Contenido Multimedia</h2>
+    <p> 
+        Incluir sonidos en la web <br>
+        Etiqueta audio> (html 5) <br>
+        audio src="archivo.mp3"> /audio> <br>
+        Pueden encontrar etiquetas <br>
+        deprecadas como embed> y <br>
+        bgsound>
+    </p>
+    <p>sintaxis</p>
+    <ul>
+        <li>
+            <strong>autoplay</strong> : atributo que reproduce automáticamente al cargar la Pagina
+        </li>
+        <li>
+            <strong>loop</strong> : atributo que reproducir en bucle
+        </li>
+        <li>
+            <strong>controls</strong> : atributo que el navegador nos provea de una <br>
+            interfaz con controles para la reproducción y el control del <br>
+            volumen
+        </li>
+        <li>
+            <strong>preload</strong> : atributo que precargar el archivo de audio en segundo <br>
+            plano por el navegador, posibles valores: none, auto
+        </li>
+        <li>
+            <strong>src</strong> : etiqueta  para poder definir un formato de archivo a la vez
+            <pre>
+                audio src=“archivodeaudio.mp3”> </audio>
+            </pre>
+        </li>
+        <li>
+            <strong>source</strong> : etiqueta  para poder definir múltiples archivos
+            <pre>
+                audio>
+                    source src="audio.opus" />
+                    source src="audio.ogg" />
+                    source src="audio.mp3" />
+                /audio>
+            </pre>
+        </li>
+    </ul>
+    <h2>Contenido Multimedia</h2>
+    <p>Incluir videos en la web</p>
+    <p>Etiqueta video>/video> para reproducir videos directamente.</p>
+    <p>
+        la sintaxis <br>
+        aparte del <strong>src,autoplay,controls y el loop</strong> tambien tiene los siguientes atributos
+    </p>
+    <ul>
+        <li>
+            <strong>poster</strong> : atributo que tiene la  Ubicación de una <br>
+            imagen para mostrar cuando no se está reproduciendo el archivo.
+        </li>
+        <li>
+            <strong>muted</strong> : atributo que la ejecución inicia silenciada 
+        </li>
+        <li>
+            <strong>width / height</strong>
+        </li>
+    </ul>
+    <p>ejemplo</p>
+    <pre>
+        video width="640" height="480">
+            source src="video.mp4" type="video/mp4" />
+            source src="video.webm" type="video/webm" />
+            source src="video.ogv" type="video/ogg" />
+            img src="imagen.png" alt="Video no soportado" />
+        /video>
+    </pre>
+    <h2>OBJECT (legacy)</h2>
+    <p> 
+        la etiqueta object también para incluir ficheros de <br>
+        audio de todo tipo en las páginas web
+    </p>
+    <pre>
+        object atributo1="valor1" atributo2="valor2" atributoN="valorN">
+            param name="nombre" value="valor">
+            param name="nombre" value="valor">
+        /object>
+    </pre>
+    <p>Los principales atributos de object, en referencia a ficheros de audio, son:</p>
+    <ul>
+        <li>
+            <strong>type</strong> = "tipo_archivo", atributo importante, que declara el <br>
+            tipo de fichero de audio que estamos usando.
+        </li>
+        <li>
+            <strong>data</strong> = “URL del archivo”, url del archivo que se desea mostrar
+        </li>
+        <li>
+            <strong>width</strong> = "w", que determina el ancho visible de la consola, en pixels.
+        </li>
+        <li>
+            <strong>height</strong> = "h", que determina el alto visible de la consola, en pixels.
+        </li>
+    </ul>
+    <p>ejemplo</p>
+    <pre>
+        object type="application/x-shockwave-flash" data=" Carbo.swf“
+            style="width: 200px; height: 50px;" >
+            param name="movie" value=" Carbo.swf " />
+            ERROR (no puede mostrarse el objeto)
+        /object>
+    </pre>
+    <p>ejemplo con un reproductor mp3</p>
+    <pre>
+        object type="application/x-shockwave-flash" data="player_mp3_mini.swf" width="200" height="20">
+            param name="movie” value="player_mp3_mini.swf" />
+            param name="autostart" value=“true" />
+            param name="FlashVars" value="mp3=oye.mp3" />
+        /object>
+    </pre>
+    <p>Ejemplo para reproducir un video flv usando un reproductor flash</p>
+    <pre>
+        object type="application/x-shockwave-flash" data="player_flv_maxi.swf"
+            width="758" height="484" style="background-color:#000000">
+            param name="movie" value="player_flv.swf" />
+            param name="allowFullScreen" value="true" />
+            param name="FlashVars" value="flv=archivo.flv" />
+        /object>
+    </pre>
+</body>
+</html>
