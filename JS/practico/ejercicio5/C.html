@@ -1,0 +1,42 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Conversor Monetario</h1>
+        
+        <div>
+            <label for="cantidad">Cantidad:</label>
+            <input type="number" id="cantidad" placeholder="Ingrese la cantidad">
+        </div>
+        
+        <div>
+            <label for="origen">Convertir desde:</label>
+            <select id="origen">
+                <option value="pesos">Pesos</option>
+                <option value="dolares">Dólares</option>
+                <option value="reales">Reales</option>
+                <option value="euros">Euros</option>
+            </select>
+        </div>
+        
+        <div>
+            <label for="destino">Convertir a:</label>
+            <select id="destino">
+                <option value="dolares">Dólares</option>
+                <option value="pesos">Pesos</option>
+                <option value="reales">Reales</option>
+                <option value="euros">Euros</option>
+            </select>
+        </div>
+        
+        <button onclick="convertir()">Convertir</button>
+        
+        <div id="resultado"></div>
+    </div>
+    <script src="scriptC.js"></script>
+</body>
+</html>
