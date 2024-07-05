@@ -1,0 +1,43 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Contacto Basico</h1>
+    <hr>
+    <form id="miFormulario" onsubmit="validarCampos(event)">
+        <br>
+        <label>Nombre: </label>
+        <input class="box" title="Nombre" type="text" maxlength="15" id="nombre">
+        <br>
+        <p id="vacioNombre"></p>
+        <br>
+        <label>Apellido: </label>
+        <input class="box" title="Apellido" type="text" maxlength="15" id="apellido">
+        <br>
+        <p id="vacioApellido"></p>
+        <br>
+        <label>Direccion: </label>
+        <input class="box" title="Direccion" type="text" id="direccion">
+        <br>
+        <p id="vacioDireccion"></p>
+        <br>
+        <label>Correo electronico: </label>
+        <input class="box" title="Correo" type="email" id="CorreoElectronico">
+        <br>
+        <p id="vacioCorreo"></p>
+        <br>
+        <label>Comentario: </label>
+        <textarea class="box" title="comentario" id="comentario"></textarea>
+        <br>
+        <p id="vacioComent"></p>
+        <br>
+        <button class="btn" type="submit">agregar</button>
+    </form>
+    <div id="contactaValidado"></div>
+    <script src="script.js"></script>
+</body>
+</html>

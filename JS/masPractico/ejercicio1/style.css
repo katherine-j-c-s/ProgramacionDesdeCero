@@ -1,0 +1,24 @@
+body{
+    text-align: center;
+}
+.box{
+    border-radius: 20px;
+    border: 1px solid rgb(30, 151, 250);
+}
+.btn{
+    background-color: white;
+    padding: 10px 30px;
+    border-radius: 20px;
+    border: 1px solid rgb(30, 151, 250);
+    cursor: pointer;
+    transition: ease-in-out 0.2s;
+}
+.btn:hover {
+    background-color: rgb(30, 151, 250);
+    border: 1px solid rgb(3, 37, 187)
+}
+.error{
+    border-radius: 20px;
+    border: 1px solid red;
+    color: red;
+}

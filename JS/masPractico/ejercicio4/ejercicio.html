@@ -1,0 +1,20 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form onsubmit="pintarCelda(event)">
+        <label>Color : </label>
+        <input type="text" name="color" id="color" title="color">
+        <label>Numero : </label>
+        <input type="number" name="numero" id="numero" title="numero">
+        <p id="error"></p>
+        <button type="submit">Pintar</button>
+    </form>
+    <br>
+    <table id="tabla" cellpadding="5" border="1"></table>
+    <script src="script.js"></script>
+</body>
+</html>
