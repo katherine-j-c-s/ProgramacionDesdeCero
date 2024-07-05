@@ -1,0 +1,28 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>agenda</h1>
+    <hr>
+    <form id="miFormulario" onsubmit="nuevoReguistro(event)">
+        <label>Nombre: </label>
+        <input type="text" id="nombre">
+        <br><br>
+        <label>Direccion: </label>
+        <input type="text" id="direccion">
+        <br><br>
+        <label>Ciudad: </label>
+        <input type="text" id="ciudad">
+        <br><br>
+        <label>Telefono: </label>
+        <input type="tel" id="telefono">
+        <br><br>
+        <button type="submit">nuevo reguistro</button>
+    </form>
+    <table cellpadding="20" id="reguistros"></table>
+    <script src="script.js"></script>
+</body>
+</html>
